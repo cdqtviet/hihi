@@ -1,0 +1,65 @@
+body {
+    background-color: #dedede;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+div img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+/* --- Mobile view mặc định: 1 cột --- */
+div {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 2px;
+}
+
+/* --- Tablet view (≥772px): 2 cột --- */
+@media (min-width: 772px) {
+    div {
+        display: inline-block;
+        width: 45%;
+        vertical-align: top;
+        margin: 1%;
+    }
+
+    img {
+        height: auto;   /* bỏ ràng buộc chiều cao viewport */
+        max-width: 100%;
+    }
+}
+
+/* --- Large screen view (≥998px): 3 cột --- */
+@media (min-width: 998px) {
+    div {
+        width: 30%;
+        display: inline-block;
+        vertical-align: top;
+        margin: 1%;
+    }
+}
